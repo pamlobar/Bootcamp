@@ -38,10 +38,10 @@ describe('Funcionalidade: Login', () => {
         cy.get('[data-test="login-submit"]').click()
         cy.get('[data-test="login-password"] > .MuiFormHelperText-root').should('contain', 'Senha é obrigatória')
     });
-    // Tentativa de login apenas com senha
+    /* Tentativa de login apenas com senha
     it('Usuário não informa usuário', () => {
         cy.get('[data-test="login-password"] > .MuiInputBase-root > .MuiInputBase-input').type('p123456')
         cy.get('[data-test="login-submit"]').click()
         cy.get('.MuiFormHelperText-root').should('contain', 'Email é obrigatório')
-    });
+    });*/
 });
